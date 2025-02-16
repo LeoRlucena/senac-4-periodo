@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog</title>
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <style type="text/css">
+        main{
+            margin-top: 160px;
+        }
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav class="navbar navbar-dark bg-dark navbar-expand-md fixed-top">
+            <a href="#" class="navbar-brand">Cocina del Jefe</a>
+
+            <!-- Botão do menu sanduíche -->
+
+            <button type="button" class="navbar-toggler" data-toggle="collapse" data-target="#menu" aria-controls="menu" aria-expanded="false">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- Fim do botão -->
+
+            <!-- Menu da barra de enavegação -->
+            <div id="menu" class="collapse navbar-collapse">
+                <ul class="navbar-nav mr-auto">
+                    <li class="nav-item"><a class="nav-link" href="/5-css-bootstrap/cardapio.html">Cardápio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/5-css-bootstrap/tabela-nutricional.html">Tabela nutricional</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/5-css-bootstrap/pedido.html">Faça seu pedido</a></li>
+                    <li class="nav-item"><a class="nav-link" href="#" data-target="#baixarEbook" data-toggle="modal">Baixar e-book</a></li>
+                </ul>
+            </div>
+            <!-- Fim do menu da barra de navegação -->
+
+        </nav>
+    </header>
+
+    <main role="main" class="container">
+
+        <div class="row">
+
+            <div class="blog-main col-md-8">
+                <div class="blog-post">
+                    Sobre o e-book
+                    Comece contando uma história...
+
+                    Problema:
+                    Fale sobre as dores que seu público enfrenta.
+
+                    Solução:
+                    Apresente o e-book como a solução para essas dores.
+
+                    Benefício:
+                    Mostre os benefícios que o e-book trará para o público.
+
+                    Faça sua oferta.
+
+                    Para pesquisar um assunto nessa página tecle CTRL+F
+                </div>              
+            </div>
+
+            <aside class="blog-sidebar col-md-4">
+                <div class="p-3">
+                    E-book receitas de culinária
+                    9,90
+                </div>
+                <div class="p-3">
+                    *Menu
+                    Receitas de massas
+                    Receitas de tortas
+                    Receitas veganas
+                </div>
+            </aside>
+
+        </div>
+
+    </main>
+    
+    <!-- Inicio da caixa modal -->
+
+    <div class="modal fade" id="baixarEbook" tabindex="-1" role="dialog" aria-labelledby="tituloModal" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h4 class="modal-title" id="tituloModal">Baixar e-book</h4>
+                    <p>Preencha o formulário abaixo. Assim que recebermos seus dados, enviaremos um e-mail com o link!</p>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Fechar">&times;</button>
+                </div>
+                <div class="modal-body">
+                    <form action="obrigado.html" method="GET">
+                        <label for="nome" class="d-sm-block">Seu nome</label>
+                        <input type="text" class="form-control" id="nome" name="nome" placeholder="Digite o seu primeiro nome">
+                        <br>
+                        <label for="e-mail" class="d-sm-block">Seu e-mail</label>
+                        <input type="email" class="form-control" id="email" name="email" placeholder="Digite o seu e-mail">
+                        <br>
+                        <button type="submit" class="btn btn-block btn-lg btn-primary">Quero receber e participar da lista!</button>
+                    </form>
+                </div>
+            </div>   
+        </div>        
+    </div>
+
+    <!-- Fim da caixa modal -->
+
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+</html>

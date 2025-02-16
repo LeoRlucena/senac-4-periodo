@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexbox</title>
+
+    <style type="text/css">
+        #moldura {
+            display: flex;
+            align-content: center;
+            height: 500px;
+            border: solid 1px #333333;
+            background-color: #cccccc;
+        }
+        #moldura div {
+            width: 120px;
+            height: 120px;
+            background-color: #333333;
+            color: #ffffff;
+            text-align: center;
+            margin: 4px;
+            font-size: 22px;
+        }      
+    </style>
+</head>
+<body>
+    <div id="moldura">
+        <div>Item A</div>
+        <div style="align-self: flex-end;">Item B</div>
+        <div>Item C</div>
+        <div>Item D</div>
+    </div>
+</body>
+</html>
